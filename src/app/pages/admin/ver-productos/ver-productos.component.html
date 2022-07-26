@@ -1,0 +1,62 @@
+<body>
+  <!--MENU-->
+  <section class="programa">
+      <div class="contenido-programa1">
+          <div class="programa-evento1">
+              <div class="barra">
+                  <h3>Lista de Productos</h3>
+                  <mat-table class="table" [dataSource]="dataSource" matSort class="mat-elevation-z8">
+                      <ng-container matColumnDef="Editar">
+                          <mat-header-cell *matHeaderCellDef class="titulo"></mat-header-cell>
+                          <mat-cell *matCellDef="let element">
+                            <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+                                <mat-icon>more_vert</mat-icon>
+                              </button>
+                              <mat-menu #menu="matMenu">
+                                <button mat-menu-item class="boton" (click)="abrirDialogoEditar(element.idProducto)">
+                                  <mat-icon style="color: rgb(92, 155, 10);">edit</mat-icon>
+                                  <span style="color: black;">Editar</span>
+                                </button>
+                                <button mat-menu-item (click)="abrirDialogoEliminar(element.idProducto)">
+                                  <mat-icon style="color: rgb(92, 155, 10);">delete</mat-icon>
+                                  <span style="color: black;">Eliminar</span>
+                                </button>
+                              </mat-menu>
+                          </mat-cell>
+                        </ng-container>
+              
+                      <ng-container matColumnDef="Nombre">
+                          <mat-header-cell *matHeaderCellDef mat-sort-header class="titulo"> Nombre </mat-header-cell>
+                          <mat-cell *matCellDef="let element" class="contenido"> {{element.nombre}} </mat-cell>
+                      </ng-container>
+              
+                      <ng-container matColumnDef="Precio">
+                          <mat-header-cell *matHeaderCellDef mat-sort-header class="titulo"> Precio </mat-header-cell>
+                          <mat-cell *matCellDef="let element" class="contenido"> {{element.precio}} </mat-cell>
+                      </ng-container>
+              
+                      <ng-container matColumnDef="Descripcion">
+                          <mat-header-cell *matHeaderCellDef mat-sort-header class="titulo"> descripcion </mat-header-cell>
+                          <mat-cell *matCellDef="let element" class="contenido"> {{element.descripcion}} </mat-cell>
+                      </ng-container>
+                      <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+                      <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+                  </mat-table>
+              
+                  <mat-paginator class="paginador"
+                      [pageSize]="5"
+                      [pageSizeOptions]="[5, 10, 25, 100]">
+                  </mat-paginator>
+                  
+              </div>
+              
+          </div>
+      </div>
+  </section>
+</body>
+
+
+ 
+  <router-outlet></router-outlet>
+
+

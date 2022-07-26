@@ -1,0 +1,61 @@
+<body>
+  <!--MENU-->
+  <section class="programa">
+    <div class="contenido-programa1">
+      <div class="programa-evento1">
+        <div class="barra">
+          <h3>Productos</h3>
+          <mat-table
+            class="table"
+            [dataSource]="dataSource"
+            matSort
+            class="mat-elevation-z8"
+          >
+            <ng-container matColumnDef="Imagen">
+              <mat-header-cell *matHeaderCellDef mat-sort-header class="titulo">
+                Imagen
+              </mat-header-cell>
+              <mat-cell *matCellDef="let element" class="contenido">
+               <img src="../../../assets/img/imagen cambiada2.jpg.">
+              </mat-cell>
+            </ng-container>
+
+            <ng-container matColumnDef="Nombre">
+              <mat-header-cell *matHeaderCellDef mat-sort-header class="titulo">
+                Nombre
+              </mat-header-cell>
+              <mat-cell *matCellDef="let element" class="contenido">
+                {{ element.nombre }}
+              </mat-cell>
+            </ng-container>
+
+            <ng-container matColumnDef="Precio">
+              <mat-header-cell *matHeaderCellDef mat-sort-header class="titulo">
+                Precio
+              </mat-header-cell>
+              <mat-cell *matCellDef="let element" class="contenido">
+                {{ element.precio }}
+              </mat-cell>
+            </ng-container>
+            
+            <!--detalle-->
+            <ng-container matColumnDef="ver">
+              <mat-header-cell *matHeaderCellDef class="titulo"></mat-header-cell>
+              <mat-cell *matCellDef="let element">
+                <button mat-menu-item class="boton" (click)="abrirDialogoProducto(element.idProducto)">
+                  <mat-icon style="color: rgb(92, 155, 10);  outline: none;">visibility</mat-icon>
+                </button>
+              </mat-cell>
+            </ng-container>
+            <!--fin detalle-->
+            <mat-header-row
+              *matHeaderRowDef="displayedColumns"
+            ></mat-header-row>
+            <mat-row *matRowDef="let row; columns: displayedColumns"></mat-row>
+          </mat-table>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+<router-outlet></router-outlet>

@@ -1,0 +1,29 @@
+<div class="contenedor">
+  <h2>Registra Un Producto</h2>
+  <mat-divider></mat-divider>
+  <div class="login">
+    <form class="example-form" [formGroup]="form" #frmproducto="ngForm">
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label>Correo</mat-label>
+          <input type="email" matInput>
+        </mat-form-field>
+        <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Contraseña</mat-label>
+            <input type="password" matInput >
+          </mat-form-field>
+          <!--boton-->
+  <div class="example-label">
+    <button mat-stroked-button class="button" [disabled]="frmproducto.invalid">
+      <mat-icon>done</mat-icon> 
+      <span>Guardar</span>
+    </button>
+    <!--button mat-stroked-button class="buttonCancelar" routerLink="/admin" color="red">
+      <mat-icon>cancel</mat-icon> 
+      <span>Cancelar</span>
+    </button-->
+    </div>
+      </form>
+      
+  </div>
+ 
+</div>

@@ -1,0 +1,40 @@
+.contenedor{
+  display: fixed;
+  width: 100%;
+  text-align: center;
+  border-top-width: 1px;
+  border-color: black;
+  background-color: rgba(53, 51, 51, 0.349);/*transparencia*/
+}
+h2{
+  color: white;
+  margin-top: 50px;
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+.mat-divider{
+  width: 83%;
+  margin-left: 100px;
+  margin-right: 100px;
+  text-align: center;
+  border-top-width: 1.5px;
+  border-color: white;
+  margin-bottom: 50px;
+}
+.example-form {
+    width: 70%;
+    margin-left: 150px;
+    text-align: center;
+    display: fixed;
+    background: yellow;
+  }
+  
+  .example-full-width {
+    width: 100%;
+    background: white;
+    
+  }
+  .mat-stroked-button{
+    background: white;
+  }
+  

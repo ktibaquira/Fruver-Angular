@@ -1,0 +1,45 @@
+<mat-toolbar class="barra">
+  <button class="logo" (click)="toggleCollapsed()">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <img src="../assets/img/logo-dark.svg" alt="logo de la compañia" />  
+</mat-toolbar>
+
+<mat-drawer-container class="sidenav" [ngClass]="collapsed ? 'sidenav-collapsed':''">
+  <mat-drawer class="nav" #drawer mode="side" opened>
+    <div class="logo-container">
+      <div class="logo-next" *ngIf="collapsed">FRUVER</div>
+      <button class="btn-close" *ngIf="collapsed" (click)="closesidenav()">
+        <mat-icon class="icon-close">close</mat-icon>
+      </button>
+      
+    </div>
+    <div class="menu">
+      <!--opciones-->
+      <div class="logo-container">
+        <button type="button" class="logo" mat-button (click)="cliente = cliente" mat-raised-button routerLink="/cliente">
+          <mat-icon>person</mat-icon>
+        </button>
+        <div class="logo-next" *ngIf="collapsed">Cliente</div>
+      </div>
+      <!--Listar productos-->
+      <div class="logo-container">
+        <button type="button" class="logo" mat-button (click)="Listar = Listar" mat-raised-button routerLink="/VerProductos">
+          <mat-icon>close</mat-icon>
+        </button>
+        <div class="logo-next" *ngIf="collapsed">Ver Productos</div>
+      </div>
+      <!--configuracion-->
+      <div class="logo-container">
+        <button mat-icon-button class="logo">
+          <mat-icon>settings</mat-icon>
+        </button>
+        <div class="logo-next" *ngIf="collapsed">Ver Productos</div>
+      </div>
+    </div>
+  </mat-drawer>
+  <mat-drawer-content>
+    <p *ngIf="cliente"><router-outlet></router-outlet></p>
+    <p *ngIf="Listar"><router-outlet></router-outlet></p>
+  </mat-drawer-content>
+</mat-drawer-container>

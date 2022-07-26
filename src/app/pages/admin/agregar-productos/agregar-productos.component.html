@@ -1,0 +1,51 @@
+<body>
+  <!--MENU-->
+  <section class="programa">
+      <div class="contenido-programa">
+          <div class="programa-evento">
+              <div class="formulario">
+
+                  <div class="titulo">
+                      <h2 class="h2">Formulario</h2>
+                  </div>
+                  <div class="line"></div>
+
+                  <nav>
+                      <form class="example-container" [formGroup]="form" #frmproducto="ngForm" (ngSubmit)="guardar()">
+                          <mat-form-field class="mat-form-field">
+                              <input matInput placeholder="nombre" formControlName="nombre" required>
+                              <!--mat-error *ngIf="Nombre.invalid && nombre.errors.required">El nombre es
+                                  obligatorio</mat-error-->
+                          </mat-form-field>
+                          <br>
+                          <mat-form-field class="mat-form-field">
+                              <input matInput placeholder="precio" formControlName="precio" required>
+                              <!--mat-error *ngIf="precio.invalid && precio.errors.required">El precio es
+                                  obligatorio</mat-error-->
+                          </mat-form-field>
+                          <br>
+                          <mat-form-field class="mat-form-field">
+                              <input matInput placeholder="descripcion" formControlName="descripcion" required>
+                              <!--mat-error *ngIf="descripcion.invalid && descripcion.errors.required">La descripcion es obligatoria</mat-error-->
+              
+                          </mat-form-field>
+                          <br>
+                          <div class="line2"></div>
+                          <br>
+                          <button mat-raised-button class="boton" type="submit" [disabled]="frmproducto.invalid">
+                              <span>Guardar</span>
+                          </button>
+                          <br>
+                          <!--button mat-raised-button class="boton" type="button" routerLink="/inicio">
+                              <span>Cancelar</span>
+                          </button-->
+                      </form>
+                  </nav>
+              </div>
+
+          </div>
+      </div>
+  </section>
+</body>
+
+<router-outlet></router-outlet>

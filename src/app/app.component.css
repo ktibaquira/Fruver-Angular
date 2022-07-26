@@ -1,0 +1,75 @@
+/*barra*/
+mat-toolbar{
+  background: #6ce41c;
+}
+.barra img{
+  padding-left: 20px;
+}
+/*todo el sidenav*/
+.example-container{
+  background: yellow;
+  /*background: #263238;*/
+}
+.sidenav{
+  transition: all .5s ease;
+  position: fixed;
+  z-index: 5;
+  top: 50;
+  width: 100%;
+  height: 100vh;
+  box-shadow: 0.063rem 0 1.25rem 0 #8690a3;
+}
+.nav{
+  background: #6ce41c;
+  display: table-column;
+  
+
+}
+.sidenav-collapsed{
+  width: 100%; 
+  position: fixed;
+}
+/*logo*/
+.logo-container{
+  display: flex;  
+  align-items: center;
+  padding: 0.938rem 0.938rem 0 0.938rem;
+  /*width: 70%;*/
+
+}
+.logo{
+  background: #386904bb;
+  /*background: rgb(0, 0, 0);*/
+  text-align: center;
+  width: 3rem;
+  min-width: 3rem;
+  border-radius: 0.313rem;
+  padding: 0.313rem;
+  font-size: 24px;
+  font-weight: 900;
+  cursor: pointer;
+  border: none;
+  color: white;
+}
+.logo-next{
+  margin-left: 1.5rem;
+  font-size: 15px;
+  font-weight: 500;
+  color: rgb(0, 0, 0);
+}
+.btn-close{
+  margin-left: 10px;
+  cursor: pointer;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background-color: transparent;
+  border: none;
+}
+.icon-close{
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+ }
+.navigate{
+  /*background: blueviolet;*/
+}

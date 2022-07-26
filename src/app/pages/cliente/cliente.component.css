@@ -1,0 +1,72 @@
+body{
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #e570e7;
+    /*background: -moz-linear-gradient(top,#e570e5 0%, #c85ec7 49%, #a849a3 100%);
+    background:-webkit-linear-gradient(top, #e570e7 0%, #c85ec7 49%, #a849a3 100%);
+    background: linear-gradient(to bottom, #e570e7 0%, #c85ec7 49%, #a849a3 100%);
+    filter: progid:DXImageTransforma.Microsoft.gradient(startColorstr='#e570e7',endColorstr='#a849a3', GradientType=0);
+    background-repeat: no-repeat;
+    background-attachment: fixed;*/
+    
+}
+
+.mat-form-field {
+    font-size: 14px;
+    width: 100%;
+    margin-left: 50px;
+    padding-left: 10px;
+    background-color: rgba(0, 0, 0, 0);
+    display: fixed;
+  
+    }
+  td, th {
+    display: fixed;
+    width: 25%;
+  }
+  /*aaaaa*/
+  .contenido-programa1{
+    position: absolute;
+    bottom: 30px;
+    height: 90%;
+    width: 90%;
+    background-color: rgba(0, 0, 0, 0);
+    margin-left: 50px;
+  } 
+  
+  .boton{
+    color: rgb(92, 155, 10);
+  }
+  .titulo{
+    color: rgb(81, 155, 12);
+    font-family: fantasy;
+    font-size: 15px;
+  }
+  .contenido{
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: 15px;
+    font-weight: bold;
+  }
+  h3{
+    color: white;
+    font-family: fantasy;
+    font-size: 18px;
+    text-align: center;
+    padding-top: 5px;
+  }
+  .barra {
+    top:10px;
+    bottom: 10px;
+    background-color:rgba(50, 88, 13, 0.603);
+  }
+  .paginador{
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    font-weight: bold;
+    }
+  mat-icon{
+    color: rgb(92, 155, 10);
+    border: none;
+  }
+  
+  

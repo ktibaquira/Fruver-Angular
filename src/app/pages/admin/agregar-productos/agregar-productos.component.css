@@ -1,0 +1,141 @@
+/*anterior*/
+.example-form {
+
+  max-width: 100px;
+  width: 100%;    
+}
+.mat-form-field {
+  font-size: 15px;
+  width: 100%;
+  /*background-color: rgb(255, 0, 0);
+  opacity:0.2;*/
+  color: rgb(179, 255, 0);
+}
+.example-full-width {
+  width: 100%;
+}
+.example-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  font-weight: bold;
+  margin-top: 20px;
+  
+}
+.h2{
+  text-align: center
+}
+.line{
+  width: 100%;
+  align-content: center;
+  border-top-width: 2px;
+  background-color: rgb(181, 241, 111);
+  margin-bottom: 50px;
+
+  height: 4px;
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+.boton{
+      width:20%;
+      text-align: center;
+      background: #44F918;
+      border-radius: 10px;
+      margin-left: 350px;
+}
+/*----------------------------------------------------------------*/
+div.contenido-programa{
+  position: absolute;
+  top: 10%;
+  left: 150px;
+  height: 50%;
+  width: 80%;
+} 
+div.programa-evento{
+  background-color: rgba(53, 51, 51, 0.349);/*transparencia*/
+  padding: 15px;
+  margin-top: 10px;
+  margin-bottom: 100px;
+  border-radius: 5%;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  
+}
+
+
+/*nuevo*/
+.contenedor{
+  display: fixed;
+  width: 93%;
+  margin-top: 0px;
+  margin-left: 60px;
+  text-align: center;
+  border-top-width: 3px;
+  border-color: white;
+  background-color: rgba(113, 238, 113, 0.575);/*transparencia*/
+  border-radius: 2%;
+  
+}
+h2{
+  text-align: center;
+  Font-family: Consolas, monaco, monospace;
+  font-size: 2rem;
+  margin-bottom: 50px;
+  font-family: fantasy;
+  font-size: 50px;
+  -webkit-text-fill-color: rgb(255, 255, 255);
+  -webkit-text-stroke: 1.5px rgb(47, 85, 3);
+  font-weight: bold;
+}
+.mat-divider{
+  width: 100%;
+  align-content: center;
+  border-top-width: 2px;
+  border-color: rgb(181, 241, 111);
+  margin-bottom: 50px;
+}
+.example-container{
+  display: fixed;
+  text-align: center;
+  font-style: none;
+  
+}
+.mat-form-field{
+    width: 60%;
+    padding-left: 10px;
+    margin-left: 170px;
+    margin-right: 200px;
+    color: black;
+    background: red;
+    border-radius: 1px;
+    background   : rgba(255, 255, 255, 0.753);
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+.matInput{
+  background   : rgba(0,0,0,.1);
+  border-radius: 5px;
+  color: #44F918;
+}
+.mat-stroked-button{
+      width:20%;
+      height: 100%;
+      margin-bottom: 50px;
+      background: #44F918;
+      text-emphasis-color: white;
+      text-align: center;
+}
+
+
+.example-full-width {
+  width: 100%;
+  color: white;
+}
+.buttonCancelar{
+  background:red;
+  color: white;
+  margin-left: 20px;
+  
+}
+
+
