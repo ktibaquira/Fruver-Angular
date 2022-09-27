@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { FormGroup } from '@angular/forms';
+import { UntypedFormGroup } from '@angular/forms';
 import { MatDialog } from '@angular/material/dialog';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
@@ -18,7 +18,7 @@ import { DialogoProductosComponent } from './dialogo-productos/dialogo-productos
 export class ClienteComponent implements OnInit {
   displayedColumns: string[] = ['Imagen','Nombre', 'Precio','ver'];
   dataSource = new MatTableDataSource<Productos>();
-  form: FormGroup;
+  form: UntypedFormGroup;
   
   @ViewChild(MatPaginator) paginator: MatPaginator;
   @ViewChild(MatSort) sort: MatSort;

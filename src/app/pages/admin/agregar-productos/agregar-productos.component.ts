@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { ProductosService } from 'src/app/_service/productos.service';
-import {  FormControl, FormGroup, Validators } from '@angular/forms';
+import {  UntypedFormControl, UntypedFormGroup, Validators } from '@angular/forms';
 import { Productos } from 'src/app/_model/Productos';
 import { ActivatedRoute, ParamMap, Params, Router } from '@angular/router';
 import { switchMap } from 'rxjs';
@@ -17,7 +17,7 @@ import { HttpParams } from '@angular/common/http';
 
 export class AgregarProductosComponent implements OnInit {
   //variables
-  form: FormGroup;
+  form: UntypedFormGroup;
   private id: number;
   private edicion: boolean;
   //constructor
@@ -28,11 +28,11 @@ export class AgregarProductosComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    this.form = new FormGroup({
+    this.form = new UntypedFormGroup({
       //validadciones y variables 
-      'nombre': new FormControl('', [Validators.required]),
-      'precio': new FormControl('', [Validators.required]),
-      'descripcion': new FormControl()
+      'nombre': new UntypedFormControl('', [Validators.required]),
+      'precio': new UntypedFormControl('', [Validators.required]),
+      'descripcion': new UntypedFormControl()
     });
     /*this.route.paramMap.subscribe(params => {
     if(params.get("idProducto")){

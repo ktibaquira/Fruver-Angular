@@ -1,12 +1,21 @@
+.barra{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  grid-gap: -50px;
+}
+.div-menu{
+ margin-top:-29px ; 
+}
 /*barra*/
-mat-toolbar{
+.menu{
   width: 80%;
   background: #ee5b07;
   height: 50px;
-  position: fixed;
   border-radius: 500px;
-  margin-left: 140px;
-  margin-top: 175px;
+  margin: auto;
+  /*margin-top: 175px;
+  text-align: center;
+  margin-left: auto;*/
 }
 .menuNav{
   text-align: center;
@@ -30,6 +39,21 @@ mat-toolbar{
 .example-button-row .mat-button-base {
   margin: 8px 40px 8px 0;
 }
+/***************************************************/
+/*promociones*/
+.promociones{
+  background: yellow;
+  text-align: center;
+  margin-top: 20px;
+  
+}
+.title-promociones{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+
+
 /*
 .boton{
   

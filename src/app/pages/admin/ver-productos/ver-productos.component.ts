@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { FormGroup } from '@angular/forms';
+import { UntypedFormGroup } from '@angular/forms';
 import { MatDialog } from '@angular/material/dialog';
 import { MatPaginator} from '@angular/material/paginator';
 import { MatSnackBar } from '@angular/material/snack-bar';
@@ -21,7 +21,7 @@ export class VerProductosComponent implements OnInit {
   displayedColumns: string[] = ['Editar','Nombre', 'Precio', 'Descripcion'];
   dataSource = new MatTableDataSource<Productos>();
   elemento:Productos;
-  form: FormGroup;
+  form: UntypedFormGroup;
 
   @ViewChild(MatPaginator) paginator: MatPaginator;
   @ViewChild(MatSort) sort: MatSort;

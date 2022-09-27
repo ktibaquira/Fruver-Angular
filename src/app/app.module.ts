@@ -24,35 +24,30 @@ import { DialogoProductosComponent } from './pages/cliente/dialogo-productos/dia
 
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    SuperAdminComponent,
-    AdminComponent,
-    ClienteComponent,
-    AgregarProductosComponent,
-    VerProductosComponent,
-    LoginComponent,
-    DialogoEliminarComponent,
-    DialogoEditarComponent,
-    DialogoProductosComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    NoopAnimationsModule,
-    MaterialModule,
-    HttpClientModule,
-    FormsModule,
-    ReactiveFormsModule,
-    MatFormFieldModule
-  ],
-  entryComponents:[
-    DialogoEliminarComponent,
-    DialogoEditarComponent,
-    DialogoProductosComponent
-  ],
-  providers: [],
-  bootstrap: [AppComponent],
-  schemas:[CUSTOM_ELEMENTS_SCHEMA]
+    declarations: [
+        AppComponent,
+        SuperAdminComponent,
+        AdminComponent,
+        ClienteComponent,
+        AgregarProductosComponent,
+        VerProductosComponent,
+        LoginComponent,
+        DialogoEliminarComponent,
+        DialogoEditarComponent,
+        DialogoProductosComponent
+    ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        NoopAnimationsModule,
+        MaterialModule,
+        HttpClientModule,
+        FormsModule,
+        ReactiveFormsModule,
+        MatFormFieldModule
+    ],
+    providers: [],
+    bootstrap: [AppComponent],
+    schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class AppModule { }

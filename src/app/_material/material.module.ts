@@ -18,6 +18,8 @@ import {MatTreeModule} from '@angular/material/tree';
 import {MatExpansionModule} from '@angular/material/expansion';
 import { AppRoutingModule } from '../app-routing.module';
 import {MatDialogModule} from '@angular/material/dialog';
+import { SwiperModule } from 'swiper/angular';
+
 
 
 @NgModule({
@@ -41,7 +43,8 @@ import {MatDialogModule} from '@angular/material/dialog';
     MatTreeModule,
     MatExpansionModule,
     AppRoutingModule,
-    MatDialogModule
+    MatDialogModule,
+    SwiperModule
 
   ],
   exports:[
@@ -62,7 +65,8 @@ import {MatDialogModule} from '@angular/material/dialog';
     MatTreeModule,
     MatExpansionModule,
     AppRoutingModule,
-    MatDialogModule
+    MatDialogModule,
+    SwiperModule
 
   ]
 })

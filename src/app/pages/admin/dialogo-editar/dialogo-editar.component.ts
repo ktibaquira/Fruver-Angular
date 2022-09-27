@@ -1,5 +1,5 @@
 import { Component, Inject, OnInit } from '@angular/core';
-import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { UntypedFormControl, UntypedFormGroup, Validators } from '@angular/forms';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { ActivatedRoute, Router } from '@angular/router';
@@ -14,7 +14,7 @@ import { ProductosService } from 'src/app/_service/productos.service';
 export class DialogoEditarComponent implements OnInit {
   //variables
   idProducto:number;
-  form: FormGroup;
+  form: UntypedFormGroup;
   private id: number;
   private edicion: boolean;
   
@@ -47,11 +47,11 @@ export class DialogoEditarComponent implements OnInit {
     });
   }
   inicializarFormularioVacio() {
-    this.form = new FormGroup({
+    this.form = new UntypedFormGroup({
       //validadciones y variables 
-      'nombre': new FormControl('', [Validators.required]),
-      'precio': new FormControl('', [Validators.required]),
-      'descripcion': new FormControl()
+      'nombre': new UntypedFormControl('', [Validators.required]),
+      'precio': new UntypedFormControl('', [Validators.required]),
+      'descripcion': new UntypedFormControl()
     });
   }
   editar(){
