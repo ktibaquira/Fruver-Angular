@@ -1,75 +1,53 @@
 /*barra*/
 mat-toolbar{
-  background: #6ce41c;
-}
-.barra img{
-  padding-left: 20px;
-}
-/*todo el sidenav*/
-.example-container{
-  background: yellow;
-  /*background: #263238;*/
-}
-.sidenav{
-  transition: all .5s ease;
+  width: 80%;
+  background: #ee5b07;
+  height: 50px;
   position: fixed;
-  z-index: 5;
-  top: 50;
-  width: 100%;
-  height: 100vh;
-  box-shadow: 0.063rem 0 1.25rem 0 #8690a3;
+  border-radius: 500px;
+  margin-left: 140px;
+  margin-top: 175px;
 }
-.nav{
-  background: #6ce41c;
-  display: table-column;
-  
-
-}
-.sidenav-collapsed{
-  width: 100%; 
-  position: fixed;
-}
-/*logo*/
-.logo-container{
-  display: flex;  
-  align-items: center;
-  padding: 0.938rem 0.938rem 0 0.938rem;
-  /*width: 70%;*/
-
-}
-.logo{
-  background: #386904bb;
-  /*background: rgb(0, 0, 0);*/
+.menuNav{
   text-align: center;
-  width: 3rem;
-  min-width: 3rem;
-  border-radius: 0.313rem;
-  padding: 0.313rem;
-  font-size: 24px;
-  font-weight: 900;
-  cursor: pointer;
-  border: none;
   color: white;
+  width: 100%;
 }
-.logo-next{
-  margin-left: 1.5rem;
+.boton{
+  font-size: 16px;
+}
+.boton:hover{
+  background-color: rgba(255, 255, 255, 0.719);
+  color: #ee5b07;
+  border-color: white;
+}
+.example-button-row {
+  /*display: table-cell;*/
+  width: 100%;
   font-size: 15px;
-  font-weight: 500;
-  color: rgb(0, 0, 0);
 }
-.btn-close{
-  margin-left: 10px;
-  cursor: pointer;
-  width: 2rem;
-  height: 2rem;
-  border-radius: 50%;
-  background-color: transparent;
-  border: none;
+
+.example-button-row .mat-button-base {
+  margin: 8px 40px 8px 0;
 }
-.icon-close{
-  color: rgb(255, 255, 255);
-  font-size: 24px;
- }
-.navigate{
-  /*background: blueviolet;*/
+/*
+.boton{
+  
+  color: white;
+  border-color: white;
+  font-size: 15px;
 }
+.boton:hover{
+  background-color: rgba(255, 255, 255, 0.692);
+  color: black;
+}
+.example-button-row {
+  display: table-cell;
+  width: 490px;
+  text-align: center;
+  font-size: 15px;
+}
+
+.example-button-row .mat-button-base {
+  margin: 8px 20px 8px 0;
+}*/
