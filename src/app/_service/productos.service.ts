@@ -9,7 +9,8 @@ import { Productos } from '../_model/Productos';
 })
 export class ProductosService {
   //url base
-  private url: string = `${environment.HOST}productos`;
+  //private url: string = `${environment.HOST}productos`;
+  private url: string = `https://fruver-app.herokuapp.com/productos`;
   constructor(private http: HttpClient) {}
 //variables
 mensajeCambio = new Subject<string>();//variable reactiva
