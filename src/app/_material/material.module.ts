@@ -19,6 +19,7 @@ import {MatExpansionModule} from '@angular/material/expansion';
 import { AppRoutingModule } from '../app-routing.module';
 import {MatDialogModule} from '@angular/material/dialog';
 import { SwiperModule } from 'swiper/angular';
+import {MatCardModule} from '@angular/material/card';
 
 
 
@@ -44,7 +45,8 @@ import { SwiperModule } from 'swiper/angular';
     MatExpansionModule,
     AppRoutingModule,
     MatDialogModule,
-    SwiperModule
+    SwiperModule,
+    MatCardModule
 
   ],
   exports:[
@@ -66,7 +68,8 @@ import { SwiperModule } from 'swiper/angular';
     MatExpansionModule,
     AppRoutingModule,
     MatDialogModule,
-    SwiperModule
+    SwiperModule,
+    MatCardModule
 
   ]
 })

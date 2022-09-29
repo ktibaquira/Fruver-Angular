@@ -44,7 +44,7 @@ export class VerProductosComponent implements OnInit {
         this.dataSource.sort = this.sort;
       }
     );
-  }
+  }      
   //metodos
   abrirDialogoEliminar(idProducto:number){
     const dialogRef = this.dialog.open(DialogoEliminarComponent, {
