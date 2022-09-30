@@ -52,6 +52,7 @@
   /*background: yellow;*/
   text-align: center;
   margin-top: 20px;
+
 }
 
 .title-promociones {
@@ -102,7 +103,7 @@
 
 .card-boton {
   background: #57C838;
-  color: white;
+  color: rgb(0, 0, 0);
   font-size: 1.2em;
 }
 
@@ -111,12 +112,12 @@
   color: white;
 }
 
-/*****************************************************/
+/*********************************************************************/
 /*frutilandia*/
 .frutilandia {
   width: 100%;
   background: #ee5b07;
-  height: 300px;
+  height: 350px;
   margin-top: 40px;
   display: flex;
 }
@@ -146,7 +147,7 @@
   margin-top: 20px;
 }
 .contenido button:hover {
-  background: #ffffffb7;
+  background: #ffffffe1;
   color: #ee5b07;
 }
 
@@ -158,11 +159,12 @@
   border-radius: 20px;
   border-color: white;
 }
+/****************************************************************************/
 /*sucursales*/
 .sucursales{
   /*background: #57C838;*/
   width: 100%;
-  height: 500px;
+  height: 550px;
   
 }
 .sucursales h2{
@@ -179,44 +181,106 @@
 .contenido-sucursales{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  background: turquoise;
+  /*background: turquoise;*/
   margin-top: 40px;
 }
 .direccion{
-  background: rgba(184, 11, 11, 0.719);
+  /*background: rgba(184, 11, 11, 0.719);*/
+  margin-left: 190px;
 }
 .direccion iframe{
-  width: 70%;
+  width: 60%;
   margin: auto;
 }
 .direccion button{
+  background: #57C838;
+  margin-top: 10px;
+  display: inline;
+  width: 20%;
+  font-size: 1.2em;
+
+}
+.direccion button:hover{
   background: #ee5b07;
-  margin-top: 50px;
-  display: block;
-}
-
-
-
-
-
-/*
-.boton{
-  
   color: white;
-  border-color: white;
-  font-size: 15px;
 }
-.boton:hover{
-  background-color: rgba(255, 255, 255, 0.692);
-  color: black;
+.direccion2{
+  /*background: rgba(158, 184, 11, 0.719);*/
+  margin-right: 190px;
 }
-.example-button-row {
-  display: table-cell;
-  width: 490px;
-  text-align: center;
-  font-size: 15px;
+.direccion2 iframe{
+  width: 60%;
+  margin: auto;
 }
-
-.example-button-row .mat-button-base {
-  margin: 8px 20px 8px 0;
-}*/
+.direccion2 button{
+  background: #57C838;
+  margin-top: 10px;
+  display: inline;
+  width: 20%;
+  font-size: 1.2em;
+}
+.direccion2 button:hover{
+  background: #ee5b07;
+  color: white;
+}
+/*****************************************************************************************/
+/*footer*/
+.footer{
+  background: #ee5b07;
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.divider{
+  width: 60%;
+  background: wheat;
+  display: inline-block;
+   margin: 0;
+   border-top-width: 2px;
+   border-top-style: solid;
+}
+.contactenos{
+  /*background: yellow;*/
+  margin-top: 20px;
+  margin-left: 190px;
+}
+.contactenos h2{
+  color:white;
+  font-size: 1.8em;
+}
+.contactenos h3{
+  color: white;
+  font-size: 1.2em;
+}
+.logo{
+  /*background: yellowgreen;*/
+}
+.logo img{
+  width: 50%;
+  margin-top: 30px;
+}
+.horarios{
+  /*background: violet;*/
+  margin-top: 20px;
+  margin-right: 190px;
+}
+.horarios h2{
+  color:white;
+  font-size: 1.8em;
+}
+.horarios p{
+color: white;
+font-size: 1.2em;
+justify-content: center;
+}
+.derechos{
+  background: #8a3605;
+  width: 100%;
+  height: 30px;
+}
+.derechos h4{
+  padding-top: 3px;
+  color: white;
+  font-size: 0.9em;
+}
