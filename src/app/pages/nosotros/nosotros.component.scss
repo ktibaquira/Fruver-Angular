@@ -7,12 +7,13 @@
 }*/
 
 .nosotros {
-  background: violet;
+  //background: violet;
   width: 100%;
-  height: 500px;
+  height: auto;
+
   //contenedor nosotros
   .contenedor-nosotros {
-    background: brown;
+    //background: brown;
     height: auto;
 
     h2 {
@@ -22,6 +23,7 @@
       font-size: 1.9em;
       font-weight: bold;
     }
+
     p {
       width: 60%;
       margin: auto;
@@ -29,6 +31,7 @@
       color: rgb(0, 0, 0);
       margin-top: 20px;
     }
+
     video {
       //background: green;
       display: flex;
@@ -38,45 +41,294 @@
       border-color: white;
     }
   }
+
   //contenedor mision
   .contenedor-mision {
-    background: gold;
+    //background: gold;
     width: 100%;
-    height: 500px;
+    height: auto;
     display: grid;
-    margin-top: 30px;
+    margin-top: 50px;
     grid-template-columns: repeat(2, 1fr);
+
     div {
       //background: hotpink;
       text-align: center;
       color: white;
       margin: auto;
+
       h2 {
         text-align: center;
-        color: rgb(0, 0, 0); 
+        color: rgb(0, 0, 0);
         margin-top: 20px;
         font-size: 1.9em;
         font-weight: bold;
       }
+
       p {
         width: 60%;
         margin: auto;
         text-align: justify;
         color: rgb(0, 0, 0);
         margin-top: 20px;
-        
-      } 
+
+      }
     }
+
     img {
       margin: auto;
       border-radius: 20px;
     }
   }
+
   //contenedor vision
   .contenedor-vision {
-    background: green;
+    //background: green;
+    width: 100%;
+    height: auto;
+    display: grid;
+    margin-top: 30px;
+    grid-template-columns: repeat(2, 1fr);
+
+    img {
+      margin: auto;
+      border-radius: 20px;
+    }
+
+    div {
+      text-align: center;
+      color: white;
+      margin: auto;
+
+      h2 {
+        text-align: center;
+        color: rgb(0, 0, 0);
+        margin-top: 20px;
+        font-size: 1.9em;
+        font-weight: bold;
+      }
+
+      p {
+        width: 60%;
+        margin: auto;
+        text-align: justify;
+        color: rgb(0, 0, 0);
+        margin-top: 20px;
+
+      }
+    }
+  }
+
+  hr {
+    width: 80%;
+    margin-top: 100px;
+    color: #ee5b07;
+    margin: auto;
+  }
+
+  //contenedor contacto
+  .contenedor-contacto {
+    //background: lawngreen;
     width: 100%;
     height: 500px;
+    margin-top: 70px;
+
+    h2 {
+      text-align: center;
+      color: rgb(0, 0, 0);
+      margin-top: 30px;
+      font-size: 1.9em;
+      font-weight: bold;
+    }
+
+    /* From uiverse.io by @alexruix */
+    .input-group {
+      position: relative;
+      //background: #1a73e8;
+      width: 40%;
+      margin: auto;
+      margin-top: 20px;
+
+    }
+
+    .input {
+      width: 90%;
+      border: solid 2px #ee5b07;
+      border-radius: 1rem;
+      background: none;
+      padding: 1rem;
+      font-size: 1rem;
+      color: #000000;
+      transition: border 150ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .user-label {
+      position: absolute;
+      left: 15px;
+      color: #000000;
+      pointer-events: none;
+      transform: translateY(1rem);
+      transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .input:focus,
+    input:valid {
+      outline: none;
+      border: 2px solid #ee5b07;
+    }
+
+    .input:focus~label,
+    input:valid~label {
+      transform: translateY(-50%) scale(0.8);
+      background-color: #ee5b07;
+      padding: 0 .2em;
+      color: #ffffff;
+    }
+
+    /* From uiverse.io by @adamgiebl */
+    button {
+      font-family: inherit;
+      font-size: 20px;
+      background: #ee5b07;
+      color: white;
+      padding: 0.7em 1em;
+      padding-left: 0.9em;
+      display: flex;
+      align-items: center;
+      border: none;
+      border-radius: 16px;
+      overflow: hidden;
+      transition: all 0.2s;
+      margin: auto;
+      margin-top: 20px;
+    }
+
+    button span {
+      display: block;
+      margin-left: 0.3em;
+      transition: all 0.3s ease-in-out;
+    }
+
+    button svg {
+      display: block;
+      transform-origin: center center;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    button:hover .svg-wrapper {
+      animation: fly-1 0.6s ease-in-out infinite alternate;
+    }
+
+    button:hover svg {
+      transform: translateX(1.2em) rotate(45deg) scale(1.1);
+    }
+
+    button:hover span {
+      transform: translateX(5em);
+    }
+
+    button:active {
+      transform: scale(0.95);
+    }
+
+    @keyframes fly-1 {
+      from {
+        transform: translateY(0.1em);
+      }
+
+      to {
+        transform: translateY(-0.1em);
+      }
+    }
+
+
   }
-  //contenedor contacto
+
+  /*****************************************************************************************/
+  /*footer*/
+  .footer {
+    background: #ee5b07;
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .redes {
+    /*background: forestgreen;*/
+  }
+
+  .logo {
+    /*background: yellowgreen;*/
+  }
+
+  .logo img {
+    width: 20%;
+    margin-top: 50px;
+  }
+
+  .logo h3 {
+    color: white;
+    font-style: italic;
+  }
+
+  .acceso-redes {
+    width: 50%;
+    /*background: #556565;*/
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: auto;
+    margin-top: 20px;
+  }
+
+  .contactenos {
+    /*background: yellow; */
+  }
+
+  .contactenos h2 {
+    color: white;
+    font-size: 1.6em;
+    margin-top: 30px;
+  }
+
+  .datos {
+    width: 70%;
+    /*background: violet;*/
+    color: white;
+    text-align: left;
+    margin-top: 20px;
+    margin: auto;
+  }
+
+  .horarios {
+    /*background: rgb(143, 30, 235);*/
+  }
+
+  .horarios h2 {
+    color: white;
+    font-size: 1.6em;
+    margin-top: 30px;
+  }
+
+  .datos-horarios {
+    width: 45%;
+    /*background: violet;*/
+    color: white;
+    text-align: left;
+
+    margin: auto;
+  }
+
+  .derechos {
+    background: #8a3605;
+    width: 100%;
+    height: 30px;
+  }
+
+  .derechos h4 {
+    padding-top: 3px;
+    color: white;
+    font-size: 0.9em;
+  }
+
 }
