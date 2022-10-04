@@ -6,11 +6,13 @@ import { AgregarProductosComponent } from './pages/admin/agregar-productos/agreg
 import { DialogoEditarComponent } from './pages/admin/dialogo-editar/dialogo-editar.component';
 import { VerProductosComponent } from './pages/admin/ver-productos/ver-productos.component';
 import { ClienteComponent } from './pages/cliente/cliente.component';
+import { InicioComponent } from './pages/inicio/inicio.component';
+import { NosotrosComponent } from './pages/nosotros/nosotros.component';
 import { LoginComponent } from './pages/super-admin/login/login.component';
 
 const routes: Routes = [
   //inicio
-  {path: 'inicio', component:AppComponent},
+  {path: 'home', component:InicioComponent},
   //SuperAdmin
   {path:'login', component:LoginComponent},
   //Admin
@@ -20,7 +22,10 @@ const routes: Routes = [
   {path:'edicion/:idProducto', component:DialogoEditarComponent},
 
   //cliente
-  {path:'cliente', component:ClienteComponent}
+  {path:'cliente', component:ClienteComponent},
+  //nosotros
+  {path:'nosotros', component:NosotrosComponent},
+
 ];
 
 @NgModule({

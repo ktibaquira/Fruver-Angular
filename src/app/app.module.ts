@@ -19,6 +19,8 @@ import { DialogoEditarComponent } from './pages/admin/dialogo-editar/dialogo-edi
 import { AppComponent } from './app.component';
 import { ClienteComponent } from './pages/cliente/cliente.component';
 import { DialogoProductosComponent } from './pages/cliente/dialogo-productos/dialogo-productos.component';
+import { NosotrosComponent } from './pages/nosotros/nosotros.component';
+import { InicioComponent } from './pages/inicio/inicio.component';
 
 
 
@@ -34,7 +36,9 @@ import { DialogoProductosComponent } from './pages/cliente/dialogo-productos/dia
         LoginComponent,
         DialogoEliminarComponent,
         DialogoEditarComponent,
-        DialogoProductosComponent
+        DialogoProductosComponent,
+        NosotrosComponent,
+        InicioComponent
     ],
     imports: [
         BrowserModule,

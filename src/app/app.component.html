@@ -1,294 +1,36 @@
-<div class="barra">
-  <img width="100%" height="200px" src="../assets/img/fdfin.jpg" alt="" />
-  <div class="div-menu">
-    <mat-toolbar class="menu">
-      <section class="menuNav">
-        <div class="example-button-row">
-          <button mat-button class="boton">Inicio</button>
-          <button mat-button class="boton">Tienda</button>
-          <button mat-button class="boton">Nosotros</button>
-          <button mat-button class="boton">Carrito</button>
-          <!--a mat-raised-button href="https://www.google.com/" target="_blank">Link</a-->
-        </div>
-      </section>
-    </mat-toolbar>
+<div>
+  <div class="barra">
+    <img width="100%" height="200px" src="../assets/img/fdfin.jpg" alt="" />
+    <div class="div-menu">
+      <mat-toolbar class="menu">
+        <section class="menuNav">
+          <div class="example-button-row">
+            <a href="">
+              <button routerLink="/home" mat-button class="boton">Inicio</button>
+            </a>
+            <a href="">
+              <button mat-button class="boton">Tienda</button>
+            </a>
+            <button routerLink="/nosotros" mat-button class="boton">Nosotros</button>
+            <a href="">
+              <button mat-button class="boton">Carrito</button>
+            </a>
+  
+            <button class="boton" mat-button [matMenuTriggerFor]="menuUsuario">
+              Usuario
+            </button>
+  
+            <mat-menu #menuUsuario="matMenu">
+              <button class="boton-usuario" mat-menu-item routerLink="/VerProductos">
+                Inicio de sesion
+              </button>
+              <button class="boton-usuario" mat-menu-item routerLink="agregarProductos">Registro</button>
+            </mat-menu>
+          </div>
+        </section>
+      </mat-toolbar>
+    </div>
   </div>
+  
 </div>
-<div class="promociones">
-  <h2 class="title-promociones">Promociones</h2>
-  <!-- Slider main container -->
-  <div class="swiper">
-    <!-- Additional required wrapper -->
-    <div class="swiper-wrapper">
-      <!-- Slides -->
-      <div class="swiper-slide">
-        <div class="card">
-          <mat-card class="example-card">
-            <mat-card-header class="header-card">
-              <mat-card-title>Shiba Inu</mat-card-title>
-            </mat-card-header>
-            <mat-divider></mat-divider>
-            <img
-              class="imagen"
-              mat-card
-              src="https://material.angular.io/assets/img/examples/shiba2.jpg"
-              alt="Photo of a Shiba Inu"
-            />
-            <mat-card-content>
-              <p>$2.500 x libra</p>
-            </mat-card-content>
-            <mat-divider></mat-divider>
-            <mat-card-actions class="actions-cards">
-              <button class="card-boton" mat-button>Ver más</button>
-            </mat-card-actions>
-          </mat-card>
-        </div>
-      </div>
-      <div class="swiper-slide">
-        <div class="card">
-          <mat-card class="example-card">
-            <mat-card-header class="header-card">
-              <mat-card-title>Shiba Inu</mat-card-title>
-            </mat-card-header>
-            <mat-divider></mat-divider>
-            <img
-              class="imagen"
-              mat-card
-              src="https://material.angular.io/assets/img/examples/shiba2.jpg"
-              alt="Photo of a Shiba Inu"
-            />
-            <mat-card-content>
-              <p>$2.500 x libra</p>
-            </mat-card-content>
-            <mat-divider></mat-divider>
-            <mat-card-actions class="actions-cards">
-              <button class="card-boton" mat-button>Ver más</button>
-            </mat-card-actions>
-          </mat-card>
-        </div>
-      </div>
-      <div class="swiper-slide">
-        <div class="card">
-          <mat-card class="example-card">
-            <mat-card-header class="header-card">
-              <mat-card-title>Shiba Inu</mat-card-title>
-            </mat-card-header>
-            <mat-divider></mat-divider>
-            <img
-              class="imagen"
-              mat-card
-              src="https://material.angular.io/assets/img/examples/shiba2.jpg"
-              alt="Photo of a Shiba Inu"
-            />
-            <mat-card-content>
-              <p>$2.500 x libra</p>
-            </mat-card-content>
-            <mat-divider></mat-divider>
-            <mat-card-actions class="actions-cards">
-              <button class="card-boton" mat-button>Ver más</button>
-            </mat-card-actions>
-          </mat-card>
-        </div>
-      </div>
-      <div class="swiper-slide">
-        <div class="card">
-          <mat-card class="example-card">
-            <mat-card-header class="header-card">
-              <mat-card-title>Shiba Inu</mat-card-title>
-            </mat-card-header>
-            <mat-divider></mat-divider>
-            <img
-              class="imagen"
-              mat-card
-              src="https://material.angular.io/assets/img/examples/shiba2.jpg"
-              alt="Photo of a Shiba Inu"
-            />
-            <mat-card-content>
-              <p>$2.500 x libra</p>
-            </mat-card-content>
-            <mat-divider></mat-divider>
-            <mat-card-actions class="actions-cards">
-              <button class="card-boton" mat-button>Ver más</button>
-            </mat-card-actions>
-          </mat-card>
-        </div>
-      </div>
-      <div class="swiper-slide">
-        <div class="card">
-          <mat-card class="example-card">
-            <mat-card-header class="header-card">
-              <mat-card-title>Shiba Inu</mat-card-title>
-            </mat-card-header>
-            <mat-divider></mat-divider>
-            <img
-              class="imagen"
-              mat-card
-              src="https://material.angular.io/assets/img/examples/shiba2.jpg"
-              alt="Photo of a Shiba Inu"
-            />
-            <mat-card-content>
-              <p>$2.500 x libra</p>
-            </mat-card-content>
-            <mat-divider></mat-divider>
-            <mat-card-actions class="actions-cards">
-              <button class="card-boton" mat-button>Ver más</button>
-            </mat-card-actions>
-          </mat-card>
-        </div>
-      </div>
-      <div class="swiper-slide">Slide 6</div>
-      <div class="swiper-slide">Slide 7</div>
-    </div>
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
-  </div>
-  <!--nosotros-->
-  <div class="frutilandia">
-    <div class="contenido">
-      <h2>Frutilandia</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad aliquid
-        voluptatum eveniet nam! Eaque dolore nobis quia sit at libero officiis
-        quis iste ipsam atque dolores commodi sunt, nostrum distinctio. Lorem
-        ipsum dolor sit amet consectetur adipisicing elit. Ad aliquid voluptatum
-        eveniet nam! Eaque dolore nobis quia sit at libero officiis quis iste
-        ipsam atque dolores commodi sunt, nostrum distinctio.consectetur adipisicing elit. Ad aliquid voluptatum
-        eveniet nam! Eaque dolore nobis quia sit at libero officiis quis iste
-        ipsam atque dolores commodi sunt, nostrum distinctio.
-      </p>
-      <button class="card-boton" mat-button>Conoce más de nosotros</button>
-    </div>
-    <video
-      class="video"
-      controls
-      muted
-      loop
-      src="../assets/videos/video.mp4"
-      width="400"
-      height="200"
-    ></video>
-  </div>
-  <!--sucursales-->
-  <div class="sucursales">
-    <h2>Nuestas sucursales</h2>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad aliquid
-      voluptatum eveniet nam! Eaque dolore nobis quia sit at libero officiis
-      quis iste ipsam atque dolores commodi sunt, nostrum distinctio. Lorem
-      ipsum dolor sit amet consectetur adipisicing elit. Ad aliquid voluptatum
-      eveniet nam! Eaque dolore nobis quia sit at libero officiis quis iste
-      ipsam atque dolores commodi sunt, nostrum distinctio.consectetur adipisicing elit. Ad aliquid voluptatum
-      eveniet nam! Eaque dolore nobis quia sit at libero officiis quis iste
-      ipsam atque dolores commodi sunt, nostrum distinctio.
-    </p>
-    <div class="contenido-sucursales">
-      <div class="direccion">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15904.881515892133!2d-74.20309029218747!3d4.731742199999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f82e909c56225%3A0x8adf414cf98ed022!2sRestaurante!5e0!3m2!1ses-419!2sco!4v1664491105454!5m2!1ses-419!2sco"
-          width="312"
-          height="250"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
-        <div>
-          <button mat-button>Ver más</button>
-        </div>
-      </div>
-      <div class="direccion2">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15904.818577245707!2d-74.19999089218747!3d4.734480600000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f82ef4e119261%3A0xc665b4c07497cc89!2sRestaurante%20Deli!5e0!3m2!1ses-419!2sco!4v1664491298278!5m2!1ses-419!2sco"
-          width="312"
-          height="250"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
-        <div>
-          <button mat-button>Ver más</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!--footer-->
-  <div class="footer">
-    <div class="contactenos">
-      <h2>contactenos</h2>
-      <mat-divider class="divider"></mat-divider>
-      <pre>
-        <h3>Tel: 3108247738
-karenlorenatibaquira28@hotmail.com
-        </h3>
-        <H3>AQUI VAN ICONOS QUE NO HE PODIDO PONER xD</H3>
-      </pre>
-      
-    </div>
-    <div class="logo">
-      <img src="../assets/img/image.png" alt="">
-    </div>
-    <div class="horarios">
-      <h2>Horarios de Atención</h2>
-      <mat-divider class="divider"></mat-divider>
-      <pre><p>
-Lunes a viernes
-9:30 a.m - 7:30 p.m
-
-Sabado, Domingo y festivos 
-8:00 a.m - 8:00p.m
-        </p>
-      </pre>
-    </div>
-  </div>
-  <!--derechos reservados-->
-  <div class="derechos">
-      <h4>&copy; Todos los derechos reservados a frutilandia</h4>
-  </div>
-  <!--mat-toolbar class="barra">
-  <button class="logo" (click)="toggleCollapsed()">
-    <mat-icon>menu</mat-icon>
-  </button>
-  <img src="../assets/img/logo-dark.svg" alt="logo de la compañia" />  
-</mat-toolbar>
-
-<mat-drawer-container class="sidenav" [ngClass]="collapsed ? 'sidenav-collapsed':''">
-  <mat-drawer class="nav" #drawer mode="side" opened>
-    <div class="logo-container">
-      <div class="logo-next" *ngIf="collapsed">FRUVER</div>
-      <button class="btn-close" *ngIf="collapsed" (click)="closesidenav()">
-        <mat-icon class="icon-close">close</mat-icon>
-      </button>
-      
-    </div>
-    <div class="menu">
-      <!--opciones-->
-  <!--div class="logo-container">
-        <button type="button" class="logo" mat-button (click)="cliente = cliente" mat-raised-button routerLink="/cliente">
-          <mat-icon>person</mat-icon>
-        </button>
-        <div class="logo-next" *ngIf="collapsed">Cliente</div>
-      </div>
-      <!--Listar productos-->
-  <!--div class="logo-container">
-        <button type="button" class="logo" mat-button (click)="Listar = Listar" mat-raised-button routerLink="/VerProductos">
-          <mat-icon>close</mat-icon>
-        </button>
-        <div class="logo-next" *ngIf="collapsed">Ver Productos</div>
-      </div>
-      <!--configuracion-->
-  <!--div class="logo-container">
-        <button mat-icon-button class="logo">
-          <mat-icon>settings</mat-icon>
-        </button>
-        <div class="logo-next" *ngIf="collapsed">Ver Productos</div>
-      </div>
-    </div>
-  </mat-drawer>
-  <mat-drawer-content>
-    <p *ngIf="cliente"><router-outlet></router-outlet></p>
-    <p *ngIf="Listar"><router-outlet></router-outlet></p>
-  </mat-drawer-content>
-</mat-drawer-container-->
-</div>
+<router-outlet></router-outlet>

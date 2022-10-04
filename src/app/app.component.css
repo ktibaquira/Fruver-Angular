@@ -28,259 +28,28 @@
 
 .boton {
   font-size: 16px;
+  color: white;
+  transition: all .6s ease;
 }
-
 .boton:hover {
   background-color: rgba(255, 255, 255, 0.719);
   color: #ee5b07;
   border-color: white;
 }
-
+.boton-usuario{
+  color: #ee5c07e1;
+  font-size: 15.5px;
+}
+.boton-usuario:hover{
+  background: #ee5c07;
+  color: white;
+}
 .example-button-row {
   /*display: table-cell;*/
   width: 100%;
   font-size: 15px;
+  color: white;
 }
-
 .example-button-row .mat-button-base {
   margin: 8px 40px 8px 0;
-}
-
-/***************************************************/
-/*promociones*/
-.promociones {
-  /*background: yellow;*/
-  text-align: center;
-  margin-top: 20px;
-
-}
-
-.title-promociones {
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold;
-}
-
-/*swiper*/
-.swiper {
-  width: 80%;
-  height: auto;
-  margin-top: 30px;
-}
-
-/*card*/
-.card {
-  /*background: #ee5b07;*/
-}
-
-.example-card {
-  max-width: 200px;
-  /* background: violet;*/
-  border-radius: 20px;
-  border-style: groove;
-  justify-content: center;
-  /* box-shadow: 2px 2px 40px;   /* Sombra desenfocada */
-
-}
-
-.header-card {
-  justify-content: center;
-}
-
-.example-header-image {
-  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
-  background-size: cover;
-}
-
-.imagen {
-  width: 50%;
-  justify-content: center;
-  margin-top: 15px;
-}
-
-.actions-cards {
-  /*background: turquoise;*/
-}
-
-.card-boton {
-  background: #57C838;
-  color: rgb(0, 0, 0);
-  font-size: 1.2em;
-}
-
-.card-boton:hover {
-  background: #ee5b07;
-  color: white;
-}
-
-/*********************************************************************/
-/*frutilandia*/
-.frutilandia {
-  width: 100%;
-  background: #ee5b07;
-  height: 350px;
-  margin-top: 40px;
-  display: flex;
-}
-
-.contenido {
-  width: 50%;
-  /*background: #57C838;*/
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-.contenido h2 {
-  color: white;
-  margin-top: 50px;
-  font-size: 2em;
-}
-
-.contenido p {
-  color: white;
-  text-align: justify;
-  margin-left: 60px;
-  margin-right: 60px;
-  margin-top: 30px;
-}
-
-.contenido button {
-  margin-top: 20px;
-}
-.contenido button:hover {
-  background: #ffffffe1;
-  color: #ee5b07;
-}
-
-.video {
-  display: grid;
-  text-align: center;
-  margin-top: 55px;
-  margin-left: 120px;
-  border-radius: 20px;
-  border-color: white;
-}
-/****************************************************************************/
-/*sucursales*/
-.sucursales{
-  /*background: #57C838;*/
-  width: 100%;
-  height: 550px;
-  
-}
-.sucursales h2{
-  color: black;
-  margin-top: 40px;
-  font-size: 2em;
-}
-.sucursales p{
-  text-align: justify;
-  margin-left: 250px;
-  margin-right: 250px;
-  margin-top: 45px;
-}
-.contenido-sucursales{
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  /*background: turquoise;*/
-  margin-top: 40px;
-}
-.direccion{
-  /*background: rgba(184, 11, 11, 0.719);*/
-  margin-left: 190px;
-}
-.direccion iframe{
-  width: 60%;
-  margin: auto;
-}
-.direccion button{
-  background: #57C838;
-  margin-top: 10px;
-  display: inline;
-  width: 20%;
-  font-size: 1.2em;
-
-}
-.direccion button:hover{
-  background: #ee5b07;
-  color: white;
-}
-.direccion2{
-  /*background: rgba(158, 184, 11, 0.719);*/
-  margin-right: 190px;
-}
-.direccion2 iframe{
-  width: 60%;
-  margin: auto;
-}
-.direccion2 button{
-  background: #57C838;
-  margin-top: 10px;
-  display: inline;
-  width: 20%;
-  font-size: 1.2em;
-}
-.direccion2 button:hover{
-  background: #ee5b07;
-  color: white;
-}
-/*****************************************************************************************/
-/*footer*/
-.footer{
-  background: #ee5b07;
-  width: 100%;
-  height: auto;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-}
-.divider{
-  width: 60%;
-  background: wheat;
-  display: inline-block;
-   margin: 0;
-   border-top-width: 2px;
-   border-top-style: solid;
-}
-.contactenos{
-  /*background: yellow;*/
-  margin-top: 20px;
-  margin-left: 190px;
-}
-.contactenos h2{
-  color:white;
-  font-size: 1.8em;
-}
-.contactenos h3{
-  color: white;
-  font-size: 1.2em;
-}
-.logo{
-  /*background: yellowgreen;*/
-}
-.logo img{
-  width: 50%;
-  margin-top: 30px;
-}
-.horarios{
-  /*background: violet;*/
-  margin-top: 20px;
-  margin-right: 190px;
-}
-.horarios h2{
-  color:white;
-  font-size: 1.8em;
-}
-.horarios p{
-color: white;
-font-size: 1.2em;
-justify-content: center;
-}
-.derechos{
-  background: #8a3605;
-  width: 100%;
-  height: 30px;
-}
-.derechos h4{
-  padding-top: 3px;
-  color: white;
-  font-size: 0.9em;
 }

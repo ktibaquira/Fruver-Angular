@@ -3,6 +3,6 @@ export class Productos{
     nombre:string;
     precio:number;
     descripcion:string;
-    imagen='../../../../assets/logo-dark.svg';
+    imagen='https://material.angular.io/assets/img/examples/shiba2.jpg';
     correoAdmin='ivanchavarro99@gmail.com';
 }

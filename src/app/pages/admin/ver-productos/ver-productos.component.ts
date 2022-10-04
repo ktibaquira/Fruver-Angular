@@ -37,8 +37,7 @@ export class VerProductosComponent implements OnInit {
       
     });
     //this.router.navigate(['/edicion', this.elemento.id] );
-    this.productosService.listar().subscribe(
-      data=>{
+    this.productosService.listar().subscribe(data=>{
         this.dataSource= new MatTableDataSource(data);
         this.dataSource.paginator=this.paginator;
         this.dataSource.sort = this.sort;
