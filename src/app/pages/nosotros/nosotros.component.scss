@@ -43,95 +43,73 @@
   }
 
   //contenedor mision
-  .contenedor-mision {
-    //background: gold;
+  .contenedor-mision-vision {
+    background-image: url(../../../assets/img/pexels-oleksandr-pidvalnyi-5981710.jpg);
     width: 100%;
-    height: auto;
+    height: 400px;
     display: grid;
     margin-top: 50px;
     grid-template-columns: repeat(2, 1fr);
-
-    div {
-      //background: hotpink;
-      text-align: center;
-      color: white;
-      margin: auto;
-
-      h2 {
-        text-align: center;
-        color: rgb(0, 0, 0);
-        margin-top: 20px;
-        font-size: 1.9em;
-        font-weight: bold;
-      }
-
-      p {
-        width: 60%;
-        margin: auto;
-        text-align: justify;
-        color: rgb(0, 0, 0);
-        margin-top: 20px;
-
-      }
-    }
-
-    img {
-      margin: auto;
-      border-radius: 20px;
-    }
+    margin-bottom: 50px;
+    background-color: rgb(145, 40, 40);
   }
-
-  //contenedor vision
-  .contenedor-vision {
-    //background: green;
-    width: 100%;
-    height: auto;
-    display: grid;
-    margin-top: 30px;
-    grid-template-columns: repeat(2, 1fr);
-
-    img {
-      margin: auto;
-      border-radius: 20px;
-    }
-
-    div {
-      text-align: center;
-      color: white;
-      margin: auto;
-
-      h2 {
-        text-align: center;
-        color: rgb(0, 0, 0);
-        margin-top: 20px;
-        font-size: 1.9em;
-        font-weight: bold;
-      }
-
-      p {
-        width: 60%;
-        margin: auto;
-        text-align: justify;
-        color: rgb(0, 0, 0);
-        margin-top: 20px;
-
-      }
-    }
-  }
-
-  hr {
-    width: 80%;
-    margin-top: 100px;
-    color: #ee5b07;
+  //mision
+  .mision {
+    //background: hotpink;
+    text-align: center;
+    color: rgb(0, 0, 0);
     margin: auto;
+    
+
+    h2 {
+      text-align: center;
+      color: rgb(255, 255, 255);
+      margin-top: 20px;
+      font-size: 1.9em;
+      font-weight: bold;
+      opacity: 1;
+    }
+
+    p {
+      width: 60%;
+      margin: auto;
+      text-align: justify;
+      color: rgb(255, 255, 255);
+      margin-top: 20px;
+
+    }
+  }
+  //vision
+  .vision {
+    //background: hotpink;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    margin: auto;
+
+    h2 {
+      text-align: center;
+      color: rgb(255, 255, 255);
+      margin-top: 20px;
+      font-size: 1.9em;
+      font-weight: bold;
+    }
+
+    p {
+      width: 60%;
+      margin: auto;
+      text-align: justify;
+      color: rgb(255, 255, 255);
+      margin-top: 20px;
+
+    }
   }
 
   //contenedor contacto
   .contenedor-contacto {
     //background: lawngreen;
     width: 100%;
-    height: 500px;
-    margin-top: 70px;
+    height: 540px;
+    margin-top: 50px;
 
     h2 {
       text-align: center;
@@ -254,17 +232,16 @@
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .redes {
-    /*background: forestgreen;*/
-  }
 
   .logo {
     /*background: yellowgreen;*/
+    text-align: center;
   }
 
   .logo img {
     width: 20%;
     margin-top: 50px;
+    text-align: center;
   }
 
   .logo h3 {
@@ -282,14 +259,16 @@
   }
 
   .contactenos {
-    /*background: yellow; */
+    //background: yellow; 
+
+    h2 {
+      color: white;
+      font-size: 1.6em;
+      margin-top: 30px;
+      text-align: center;
+    }
   }
 
-  .contactenos h2 {
-    color: white;
-    font-size: 1.6em;
-    margin-top: 30px;
-  }
 
   .datos {
     width: 70%;
@@ -301,13 +280,14 @@
   }
 
   .horarios {
-    /*background: rgb(143, 30, 235);*/
-  }
+    //background: rgb(143, 30, 235);
 
-  .horarios h2 {
-    color: white;
-    font-size: 1.6em;
-    margin-top: 30px;
+    h2 {
+      color: white;
+      font-size: 1.6em;
+      margin-top: 30px;
+      text-align: center;
+    }
   }
 
   .datos-horarios {
@@ -323,12 +303,14 @@
     background: #8a3605;
     width: 100%;
     height: 30px;
+    text-align: center;
+    h4 {
+      padding-top: 3px;
+      color: white;
+      font-size: 0.9em;
+    }
   }
 
-  .derechos h4 {
-    padding-top: 3px;
-    color: white;
-    font-size: 0.9em;
-  }
+
 
 }
